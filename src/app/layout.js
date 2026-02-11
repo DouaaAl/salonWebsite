@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <nav>
         <li> <a href="/">Home</a></li>
         <li> <a href="/services">Services</a> </li>
-        <li> <a href="/contact"></a> Contact Us</li>
+        <li> <a href="/contact">Contact Us</a></li>
         <li> <a href="/book"> Book Now</a> </li>
       </nav>
       </header>
