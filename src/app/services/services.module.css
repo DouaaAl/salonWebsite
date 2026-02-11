@@ -1,0 +1,211 @@
+.main {
+    width: 95%;
+    margin: 3rem auto;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: "Imperial Script";
+    margin: 5rem auto;
+    color: #FF77BA;
+    font-weight: 300;
+}
+
+.main img {
+    object-fit: cover;
+}
+
+.main h3 {
+    margin: 0.2rem 0;
+    font-size: 2rem;
+    word-spacing: 5px;
+    font-family: "Imperial Script";
+    font-weight: 300;
+    width: 400px;
+}
+
+.main span {
+    font-family: "Aclonica";
+    column-rule: #7D204A;
+    display: inline;
+    width: 400px;
+}
+
+.topGrid {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.sectionOne {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.sectionOne > h1 {
+    text-align: center;
+    color: #6B0606;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.sectionOne > p {
+    opacity: 0.5;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.sectionOne ul {
+    display: flex;
+    margin: 3rem auto;
+    margin-bottom: 6rem;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.sectionOne > div {
+    display: grid;
+    width: 95vw;
+    grid-template-columns: repeat(4, 24%);
+    gap: 1rem;
+}
+
+.sectionOne > div > article {
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.sectionOne > div > article > span {
+    display: block;
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+.sectionOne img {
+    opacity: 0.5;
+}
+
+.sectionTwo {
+    margin: 3rem auto;
+    height: 600px;
+    width: 100vw;
+    background-color: #FF77BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 15rem;
+}
+
+.sectionTwo h1 {
+    font-family: "Imperial Script";
+    font-size: 4rem;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.sectionTwo div {
+    width: 50%;
+    position: relative;
+    height: 50px;
+}
+
+.sectionTwo input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 0 15px;
+    outline: none;
+}
+
+.sectionTwo button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 20%;
+    border-radius: 50px;
+    background-color: #C6186E;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+/* --- Added Media Query for Responsiveness --- */
+@media (max-width: 768px) {
+    /* Main Section Adjustments */
+    .main h1 {
+        font-size: 2.5rem;
+        margin: 2rem auto;
+    }
+
+    .topGrid {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .main h3, .main span {
+        width: 100%; /* Removes the fixed 400px width */
+        text-align: center;
+    }
+
+    /* Section One Adjustments */
+    .sectionOne {
+        margin-top: 4rem;
+    }
+
+    .sectionOne > h1 {
+        font-size: 2rem;
+    }
+
+    .sectionOne ul {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .sectionOne > div {
+        grid-template-columns: repeat(2, 48%); /* 2 columns for tablet */
+        gap: 1rem;
+    }
+
+    /* Section Two Adjustments */
+    .sectionTwo {
+        height: auto;
+        padding: 4rem 0;
+        gap: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .sectionTwo h1 {
+        font-size: 2.2rem;
+    }
+
+    .sectionTwo div {
+        width: 90%; /* Wider input for mobile */
+    }
+
+    .sectionTwo button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionOne > div {
+        grid-template-columns: 1fr; /* 1 column for phones */
+    }
+
+    .sectionTwo button {
+        position: static; /* Stack button below input on tiny screens */
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

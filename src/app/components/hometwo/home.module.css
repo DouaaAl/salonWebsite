@@ -1,0 +1,81 @@
+
+.sectionTwo {
+  text-align: center;
+  margin: -12rem auto 15rem auto
+}
+
+.sectionTwo > .socialsGrid >  article > img {
+  object-fit: cover;
+}
+
+.sectionTwo > h1 {
+  font-family: "Imperial Script";
+  font-size: 70px;
+  color: #FF77BA;
+  width: 55vw;
+  margin: 0 auto;
+  font-weight: 100;
+}
+
+.sectionTwo > p {
+  width: 55vw;
+  margin: 20px auto;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}
+
+.sectionTwo .socialsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sectionTwo .socialsGrid > article {
+  position: relative;
+}
+
+.sectionTwo .socialsGrid > article > div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.sectionTwo .socialsGrid > article > div h3{
+  color: white;
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+
+/* --- Added Media Query for Responsiveness --- */
+@media (max-width: 768px) {
+  .sectionTwo {
+    /* Reducing the negative margin so it doesn't overlap mobile headers */
+    margin: -4rem auto 5rem auto; 
+  }
+
+  .sectionTwo > h1 {
+    font-size: 40px; /* Scaling down the 70px title */
+    width: 90vw;    /* Giving the text more room to breathe */
+  }
+
+  .sectionTwo > p {
+    width: 85vw;
+    font-size: 14px;
+  }
+
+  .sectionTwo .socialsGrid {
+    flex-direction: column; /* Stacks the social images vertically */
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .sectionTwo .socialsGrid > article img {
+    width: 100%;       /* Ensures images fill the screen width */
+    max-width: 350px;  /* Keeps them from getting too huge on tablets */
+    border-radius: 20px;
+  }
+}

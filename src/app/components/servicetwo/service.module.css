@@ -1,0 +1,84 @@
+.sectionOne {
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+.sectionOne > h1 {
+    text-align: center;
+    color: #6B0606;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.sectionOne > p {
+    opacity: 0.5;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.sectionOne ul {
+    display: flex;
+    margin: 3rem auto;
+    margin-bottom: 6rem;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.sectionOne > div {
+    display: grid;
+    width: 95vw;
+    grid-template-columns: repeat(4, 24%);
+    gap: 1rem;
+}
+
+.sectionOne > div > article {
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.sectionOne > div > article > span {
+    display: block;
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+.sectionOne img {
+    opacity: 0.5;
+}
+
+/* --- Added Media Query for Responsiveness --- */
+@media (max-width: 768px) {
+    .sectionOne {
+        margin-top: 5rem; /* Reduced top margin for mobile flow */
+    }
+
+    .sectionOne > h1 {
+        font-size: 2.2rem; /* Scaled down large heading */
+        padding: 0 10px;
+    }
+
+    .sectionOne ul {
+        flex-wrap: wrap; /* Allows list items to wrap to next line */
+        gap: 1.5rem;    /* Reduced large gap between list items */
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+
+    .sectionOne > div {
+        grid-template-columns: repeat(2, 48%); /* 2 columns for tablets */
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionOne > div {
+        grid-template-columns: 100%; /* 1 column for phones */
+    }
+    
+    .sectionOne ul {
+        gap: 1rem;
+        justify-content: space-around;
+    }
+}
