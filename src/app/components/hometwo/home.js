@@ -15,28 +15,28 @@ const home = () => {
         <article>
           <Image  width="306" height="320" alt="1" src="/section/1.jpg"  />
           <div>
-          <Image   width="50" height="50" alt="2" src="/section/icons/1.png" />
+          <Image   width="30" height="30" alt="2" src="/section/icons/1.png" />
           <h3>make up</h3>
           </div>
         </article>
                 <article>
           <Image  width="306" height="320" alt="2" src="/section/2.jpg"  />
           <div>
-          <Image   width="50" height="50" alt="2" src="/section/icons/2.png" />
+          <Image   width="30" height="30" alt="2" src="/section/icons/2.png" />
           <h3>hair styling</h3>
           </div>
         </article>
                 <article>
           <Image  width="306" height="320" alt="2" src="/section/3.jpg"  />
           <div>
-          <Image   width="50" height="50" alt="2" src="/section/icons/3.png" />
+          <Image   width="30" height="30" alt="2" src="/section/icons/3.png" />
           <h3>nail care</h3>
           </div>
         </article>
                 <article>
           <Image  width="306" height="320" alt="2" src="/section/4.jpg"  />
           <div>
-          <Image   width="50" height="50" alt="2" src="/section/icons/4.png" />
+          <Image   width="30" height="30" alt="2" src="/section/icons/4.png" />
           <h3>cosmetology</h3>
           </div>
         </article>
